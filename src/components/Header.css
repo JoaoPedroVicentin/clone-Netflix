@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background: transparent;
+    transition: all ease 0.3s;
+}
+
+header.black {
+    background: #111;
+}
+
+.header--logo{
+    height: 30px;
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list a, .infantil{
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    transition: all ease 0.4s
+}
+
+.header--logo a:hover, .infantil:hover{
+    color: rgb(172, 172, 172);
+}
+
+.header--logo img{
+    height: 100%;
+    margin-right: 25px;
+}
+
+.header--user{
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header--user .icon{
+    margin: 0 15px;
+    color: #fff;
+}
+
+.header--user img{
+    height: 30px;
+    border-radius: 3px;
+}
+
+.infantil{
+    margin: 0 15px;
+}
+
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+    margin: auto 0;
+    margin-left: 10px;
+}
+
+.mobile-menu div{
+    width: 28px;
+    height: 2px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+@media (max-width: 999px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    header{
+        padding: 0 20px;
+    }
+
+    .infantil{
+        display: none;
+    }
+
+    .nav-list{
+        position: absolute;
+        top: 9vh;
+        left: 0;
+        width: 42.5vw;
+        height: 92vh;
+        background-color: #111;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+        transform: translateX(-100%);
+    }
+
+    .nav-list a{
+        opacity: 0;
+    }
+
+    .header--logo a{
+      width: 80px;
+    }
+
+    .header--logo img{
+        width: 100%;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .header--user .icon{
+       margin: 0 10px;
+    }
+    
+}

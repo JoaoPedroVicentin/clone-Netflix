@@ -25,7 +25,7 @@
 ```bash
 
 #Clone este repositório
-$ git clone https://github.com/JoaoPedroVicentin/clone-Netflix.git
+$ git clone https://github.com/JoaoPedroVicentin/clone-netflix.git
 
 #Instale as dependências
 $ npm i
